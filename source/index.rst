@@ -3,12 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to demo1's documentation!
+xuefeng365测开笔记
 =================================
+.. image:: ./_static/xiongmao.png
+   :align: left
+   :alt: 熊猫
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents
+   
    
    01测试体系/index
    02编程语言和编译工具/index

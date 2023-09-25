@@ -27,9 +27,9 @@ python -m pip install --upgrade pip --user
 
 ```python
 pip install pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple 
-```
 
-国内镜像加速`-i https://pypi.tuna.tsinghua.edu.cn/simple `
+# -i https://pypi.tuna.tsinghua.edu.cn/simple 是指国内镜像加速 
+```
 
 其他国内镜像源
 
