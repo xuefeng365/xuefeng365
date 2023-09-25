@@ -1,14 +1,4 @@
----
-title: pyside2系列：python代码打包为exe遇到的坑
-series: pyside2
-tags: [界面,exe]
-calegories: [pyside2系列]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-# python代码打包为exe遇到的坑
+# pyside2系列：python代码打包为exe遇到的坑
 
 现象：在pycharm运行正常，但是使用 `pyinstaller`  打包后 执行exe 或者发给朋友朋友在其它机器上运行就有问题。这些现象都很有可能是由程序使用的文件路径发生改变产生的。
 

@@ -1,15 +1,4 @@
----
-title: linux及docker常用命令
-series: Linux
-tags: [docker,Linux]
-calegories: [Linux]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
+# linux及docker常用命令
 
 ⽂件和⽬录操作
 

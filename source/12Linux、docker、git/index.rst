@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-编程语言和编译工具
+Linux、docker、git
 =================================
  
 .. toctree::
@@ -12,4 +12,5 @@
    
    01Linux及docker常用命令
    02Linux克隆爬虫仓库时，权限被拒绝
+   03Git、小乌龟、版本管理
    

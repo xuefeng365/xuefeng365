@@ -1,31 +1,12 @@
----
-title: pywin32系列：鼠标、键盘前后台操作、获取文本、指定范围内的颜色值（rgb或16进制）
-series: pywin32
-tags: [pywin32]
-calegories: [pywin32系列]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
+# pywin32系列：鼠标、键盘前后台操作、获取文本、指定范围内的颜色值（rgb或16进制）
 
 前后台操作 
 
-
-
 获取文本 （可聚焦窗口（可编辑文字）、非可聚焦窗口只能获取到标题（比如歉意生活 - 新订单））
-
-
 
 python绑定非可聚焦窗口的句柄后获取该窗口内指定范围的指定颜色值的数量或所有颜色值返回一个列表（判断是否有变化），另外窗口范围是否会受 缩放和分辨率的变化发生变动。
 
-
-
-
-
 win10系统上用python3.8 通过pyinstaller编译exe缺少api-ms-win-core-path-l1-1-0.dll 导致win7电脑不可用，但是为什么同样的代码win7系统通过pyinstaller编译exe却 win7 win10都可以使用？
-
-
 
 
 

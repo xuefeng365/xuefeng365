@@ -1,15 +1,4 @@
----
-title: aamt工具：使用Jenkins创建、配置项目仓库、构建规则、邮件通知等
-series: 接口自动化
-tags: [aamt,测试,pytest,jenkins,allure]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
+# aamt工具：使用Jenkins创建、配置项目仓库、构建规则、邮件通知等
 
 ![image-20230216200700065](http://biji.51automate.cn/blogs/img/image-20230216200700065.png)
 

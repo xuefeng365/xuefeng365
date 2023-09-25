@@ -1,14 +1,4 @@
----
-title: 爬虫系列：如何解决selenium打开网页加载时间过长的问题
-series: 爬虫
-tags: [web自动化,web爬虫]
-calegories: [爬虫]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-## 爬虫系列：如何解决selenium打开网页加载时间过长的问题
+# 爬虫系列：如何解决selenium打开网页加载时间过长的问题
 
 
 > 遇到的情况如下：使用selenium打开网页后，即使页面已经加载出来可以操作了，但是浏览器地址栏旁边还是在转圈，后面的代码也一直无法往下执行，时间开销特别大。
@@ -177,7 +167,6 @@ def driver1():
     print("全部用例执行完后 teardown quit dirver")
     driver.quit()
 ```
-
 
 
 

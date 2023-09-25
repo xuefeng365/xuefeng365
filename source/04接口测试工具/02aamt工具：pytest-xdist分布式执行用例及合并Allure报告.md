@@ -1,15 +1,4 @@
----
-title: aamt工具：pytest-xdist分布式执行用例及合并Allure报告
-series: 接口自动化
-tags: [aamt,测试,pytest]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-# pytest-xdist分布式执行用例及合并Allure报告
+# aamt工具：pytest-xdist分布式执行用例及合并Allure报告
 
 ## 分布式执行用例
 

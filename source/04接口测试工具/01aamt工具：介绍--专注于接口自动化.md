@@ -1,15 +1,4 @@
----
-title: aamt工具：介绍--专注于接口自动化
-series: 接口自动化
-tags: [aamt,测试]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-# aamt
+# aamt工具：介绍--专注于接口自动化
 
 正式版源码：
 
@@ -796,5 +785,4 @@ class TepResponse(Response):
 ## 后续
 
 **aamt小工具**后期将会根据实际业务场景进行微调，结构上不会做大的改动。
-
 

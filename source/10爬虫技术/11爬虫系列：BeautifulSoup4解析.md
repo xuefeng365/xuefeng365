@@ -1,17 +1,6 @@
----
-title: 爬虫系列：BeautifulSoup4解析
-series: 爬虫
-tags: [web自动化,web爬虫]
-calegories: [爬虫]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-## BeautifulSoup4  HTML解析
+# 爬虫系列：BeautifulSoup4解析
 
 官网：https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
-
 
 
 ## 进阶

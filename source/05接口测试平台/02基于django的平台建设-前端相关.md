@@ -1,15 +1,4 @@
----
-title: 基于django的平台建设-前端相关
-series: pycharm
-tags: [aamt,测试]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
+# 基于django的平台建设-前端相关
 
 ![image-20230317181219544](http://biji.51automate.cn/blogs/img/image-20230317181219544.png)
 

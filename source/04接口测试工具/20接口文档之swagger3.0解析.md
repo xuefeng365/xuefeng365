@@ -1,15 +1,4 @@
----
-title: swagger3解析工具
-series: 测试
-tags: [aamt,测试]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
+# swagger3解析工具
 
 实际工作中遇到的现象：开发同学对接口进行了变动，一般都只是前后端进行沟通，测试同学很晚或者根本不知道发生了变动。
 

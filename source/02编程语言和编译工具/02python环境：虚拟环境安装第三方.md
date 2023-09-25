@@ -1,7 +1,7 @@
 # python虚拟环境安装第三方包
 ## python：CMD终端使用pip命令安装包到虚拟环境
 
-已创建虚拟环境，但是pycharm2种方式安装第三方包 `requests_toolbelt`，库里找不到 
+已创建虚拟环境，但是pycharm 2种方式安装第三方包 `requests_toolbelt`，库里找不到 
 
 ![image-20230216112810921](http://biji.51automate.cn/blogs/img/image-20230216112810921.png)
 

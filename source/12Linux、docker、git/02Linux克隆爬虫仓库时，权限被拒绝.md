@@ -1,13 +1,4 @@
----
-title: Linux系统克隆仓库时，权限被拒绝，如何处理
-series: Linux
-tags: [python基础,Linux]
-calegories: [Linux]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
+# Linux系统克隆仓库时，权限被拒绝，如何处理
 
 我自建IP池镜像的时候，想把仓库克隆到Linux系统上，进而通过docker 构建出自己的镜像，
 
@@ -39,5 +30,4 @@ ssh -T git@github.com
 ```
 
 ![image-20230215180105174](http://biji.51automate.cn/blogs/img/image-20230215180105174.png)
-
 

@@ -1,13 +1,3 @@
----
-title: pyside2系列：DPI自适应窗口程序-根据页面缩放和分辨率自动改变
-series: pyside2
-tags: [界面,exe]
-calegories: [pyside2系列]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
 # pyside2系列：DPI自适应窗口程序-根据页面缩放和分辨率自动改变
 
 ## 实际应用过程中会涉及到2方面的内容

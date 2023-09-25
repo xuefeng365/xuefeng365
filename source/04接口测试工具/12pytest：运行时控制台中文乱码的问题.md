@@ -1,17 +1,4 @@
----
-title: aamt工具：pytest运行控制台中文乱码的问题解决方案
-series: 接口自动化
-tags: [aamt,测试,pytest]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
-
-# 关于pytest运行完成后，控制台中文乱码的问题
+# aamt工具：pytest运行控制台中文乱码的问题解决方案
 
 我在运行pytest的时候，在控制台输出以后呢，会遇见一些中文乱码的问题
 

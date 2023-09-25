@@ -1,14 +1,4 @@
----
-title: 爬虫系列：seleinum调用chrome长时间运行后出现崩溃
-series: 爬虫
-tags: [web自动化,web爬虫]
-calegories: [爬虫]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-## 爬虫系列：seleinum调用chrome长时间运行后出现崩溃(内存溢出)
+# 爬虫系列：seleinum调用chrome长时间运行后出现崩溃(内存溢出)
 
 ![image-20230403112708761](http://biji.51automate.cn/blogs/img/image-20230403112708761.png)
 

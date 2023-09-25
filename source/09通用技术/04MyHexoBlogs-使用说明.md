@@ -1,6 +1,4 @@
----
-title: MyHexoBlogs-使用说明
----
+# MyHexoBlogs-使用说明
 
 ### 创建新文章
 

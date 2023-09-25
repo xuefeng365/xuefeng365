@@ -1,14 +1,4 @@
----
-title: aamt工具：基于docker搭建jenkins集成环境
-series: 接口自动化
-tags: [aamt,测试,pytest,jenkins,allure]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
+# aamt工具：基于docker搭建jenkins集成环境
 
 ## 一、查看linux 系统是否有docker 
 

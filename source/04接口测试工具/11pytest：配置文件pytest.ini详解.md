@@ -1,15 +1,4 @@
----
-title: aamt工具：pytest.ini配置文件详解
-series: 接口自动化
-tags: [aamt,测试,pytest]
-calegories: [接口自动化]
-author: xuefeng365
-description: 这里是描述
-comments: 是否显示评论（true/false）
-cover: img/1.png
----
-
-
+# aamt工具：pytest.ini配置文件详解
 
 ## 使用pytest --help指令可以查看pytest.ini的设置选项
 
