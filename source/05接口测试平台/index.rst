@@ -8,7 +8,7 @@
  
 .. toctree::
    :maxdepth: 1
-   :caption: Contents001
+   :caption: Contents
    
    01基于django的平台建设
    02基于django的平台建设-前端相关

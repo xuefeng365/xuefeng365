@@ -8,7 +8,7 @@
  
 .. toctree::
    :maxdepth: 1
-   :caption: Contents001
+   :caption: Contents
    
    测试用例设计、用例模板、规范等内容
 

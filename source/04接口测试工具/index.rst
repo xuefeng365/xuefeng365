@@ -8,7 +8,7 @@
  
 .. toctree::
    :maxdepth: 1
-   :caption: Contents001
+   :caption: Contents
    
    01aamt工具：介绍--专注于接口自动化
    02aamt工具：pytest-xdist分布式执行用例及合并Allure报告
@@ -20,6 +20,4 @@
    08python基础：协程知多少
    12pytest：运行时控制台中文乱码的问题
    20接口文档之swagger3.0解析
-   30抓包：Fiddler使用
-   31抓包：Charls使用
    
