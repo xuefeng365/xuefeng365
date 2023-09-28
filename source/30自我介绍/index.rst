@@ -5,14 +5,13 @@
 
 自我介绍
 =================================
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents
-   
 .. image:: ../_static/myself.png
    :align: left
    :alt: myself
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: 
    
    自我介绍
 
