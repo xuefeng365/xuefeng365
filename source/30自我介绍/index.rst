@@ -5,8 +5,9 @@
 
 自我介绍
 =================================
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents
    
 .. image:: ../_static/myself.png

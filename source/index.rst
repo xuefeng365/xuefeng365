@@ -5,6 +5,7 @@
 
 xuefeng365测开笔记
 =================================
+
 .. toctree::
    :maxdepth: 2
    :titlesonly:
@@ -24,7 +25,7 @@ xuefeng365测开笔记
    11网站推荐/index
    12Linux、docker、git/index
    18读书笔记/index
-   30自我介绍
+   30自我介绍/index
 
 
    
