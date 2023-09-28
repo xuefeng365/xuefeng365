@@ -7,6 +7,7 @@ xuefeng365测开笔记
 =================================
 .. toctree::
    :maxdepth: 2
+   :numbered:
    :caption: Contents
    
    
