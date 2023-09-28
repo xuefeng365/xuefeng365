@@ -8,9 +8,9 @@
 .. image:: ./_static/myself.png
    :align: left
    :alt: myself
+   :caption:
+   自我介绍
 
    
-我的网站
----
-www.51automate.cn
+   
    
