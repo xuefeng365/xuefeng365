@@ -5,10 +5,6 @@
 
 xuefeng365测开笔记
 =================================
-.. image:: ./_static/xiongmao.png
-   :align: left
-   :alt: 熊猫
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents
@@ -27,13 +23,7 @@ xuefeng365测开笔记
    11网站推荐/index
    12Linux、docker、git/index
    18读书笔记/index
+   30自我介绍
 
 
    
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
