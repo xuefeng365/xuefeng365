@@ -9,9 +9,6 @@
    :align: left
    :alt: myself
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents
    
    我的网站
    ---
