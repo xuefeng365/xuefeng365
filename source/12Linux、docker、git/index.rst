@@ -13,4 +13,8 @@ Linux、docker、git
    01Linux及docker常用命令
    02Linux克隆爬虫仓库时，权限被拒绝
    03Git、小乌龟、版本管理
+   0420231121 fastapi-Vue前后端项目开发
+   05mysql
+   06node
+   07vue2用法
    
