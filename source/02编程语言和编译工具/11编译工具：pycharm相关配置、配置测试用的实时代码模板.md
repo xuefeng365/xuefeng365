@@ -10,8 +10,10 @@
 5. key promoter
 6. Translation
 7. CodeGlance  显示代码缩略图插件 
-7. Vue.js
-7. Gitee
+8. Vue.js
+9. Gitee
+10. pydantic语法提示
+11. CodeGeex 人工智能代码插件
 
 
 
@@ -30,6 +32,22 @@ pycharm 定义的函数 添加注释时（输入三个“““回车），不�
 
 
 ![动画](http://biji.51automate.cn/blogs/img/%E5%8A%A8%E7%94%BB.gif)
+
+## 添加国内镜像源
+
+![image-20231114094605675](http://biji.51automate.cn/blogs/img/202311140946759.png)
+
+
+
+```
+http://pypi.douban.com/simple/ 豆瓣
+http://mirrors.aliyun.com/pypi/simple/ 阿里
+http://pypi.hustunique.com/simple/ 华中理工大学
+http://pypi.sdutlinux.org/simple/ 山东理工大学
+http://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学
+https://pypi.tuna.tsinghua.edu.cn/simple 清华
+
+```
 
 
 
