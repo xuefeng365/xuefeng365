@@ -1,4 +1,4 @@
-# Git、小乌龟、版本管理-待完善
+# Git配置、小乌龟版本管理演示、Github高级用法
 
 ## Git
 
@@ -8,13 +8,9 @@
 
 [镜像](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
+打开cmd ，使用 `git -v` 命令，测试git环境变量是否已经添加；
 
-
-
-
-打开cmd ，使用 `git -v` 命令，测试git环境变量是否已经添加；如果没有手动添加一下（我默认会安装到`D:\Program Files\Git`，环境变量path路径中 保证有这个路径）
-
-> 
+如果没有手动添加一下（我默认会安装到`D:\Program Files\Git`，环境变量path路径中 保证有这个路径）
 
 ```
 D:\Program Files\Git
@@ -22,19 +18,102 @@ D:\Program Files\Git
 
 ![image-20231116101657213](http://biji.51automate.cn/blogs/img/image-20231116101657213.png)
 
-
-
 ### Git 常用命令
 
 ```
 待补充
 ```
 
+
+
 ## 小乌龟
 
-安装包下载-阿里云盘：搜索 小乌龟
+1. 安装包下载-阿里云盘：搜索 小乌龟
 
-### 流程演示
+2. 使用小乌龟提交代码前必须 【设置账号和邮箱】
+
+   ![image-20231222133451477](http://biji.51automate.cn/blogs/img/202312221334596.png)
+
+3. 生成密钥对，并在github上添加公钥（如何生成密钥对，请参考下文）
+
+### 使用小乌龟遇到的问题及解决方案
+
+1. 使用小乌龟clone的项目没有显示绿勾
+
+   解决方案：https://blog.csdn.net/XIA_1997/article/details/82801741
+
+2. 今天使用小乌龟 将本 Git 项目推送到 GitHub 时，GitHub 却一直报如下错误：
+
+   `You‘re using an RSA key with SHA-1, which is no longer allowed. Please use a newer client`
+
+   原来是 GitHub 在 2022 年 3 月 15 日之后将不再支持 `RSA` 算法生成的密钥，原因是 `RSA` 不够安全，而笔者之前一直是使用如下命令生成密钥对的：
+
+   `ssh-keygen -t rsa -C "邮箱"`
+
+   现在只要更改[加密算法](https://so.csdn.net/so/search?q=加密算法&spm=1001.2101.3001.7020)即可，可以选择 `ed25519`
+
+   解决方案如下：
+
+   - 使用git生成密钥对
+
+     `ssh-keygen -t 加密算法 -C "邮箱"`
+
+     
+
+     ```
+     ssh-keygen -t ed25519 -C "邮箱"
+     ssh-keygen -t ed25519 -C "120158568@qq.com"
+     
+     # 注意 引号不能省略；加密算法使用 `ed25519`
+     ```
+
+     
+
+     执行命令后，会在`C:\Users\Windows 用户名\.ssh`文件夹下面生成两个文件，![image-20230925092831418](http://biji.51automate.cn/blogs/imgimage-20230925092831418.png)
+
+     其中第一个是私钥，第二个是公钥，**公钥需要提供给github或者码云**，如何添加，具体操作就不介绍了
+
+   - 或者使用小乌龟生成密钥对（**推荐**）
+
+     - 运行小乌龟安卓目录的bin文件下的 PuTTYgen程序
+
+       ![image-20230925093303755](http://biji.51automate.cn/blogs/imgimage-20230925093303755.png)
+
+     - 选择加密算法，并生成密钥对
+
+       ![image-20230925093632549](http://biji.51automate.cn/blogs/imgimage-20230925093632549.png)
+
+     - 需要不断在 PuTTY 软件界面内晃动鼠标，因为生成密钥时需要鼠标移动来生成随机数。
+
+       ![image-20230925093741319](http://biji.51automate.cn/blogs/imgimage-20230925093741319.png)
+
+     - 生成成功之后，显示出来的就是公钥了。与前面在 Git 中一样，需要全文复制这个公钥，以及保存自己的私钥。
+
+       ![image-20230925093839240](http://biji.51automate.cn/blogs/imgimage-20230925093839240.png)
+
+     - 在密钥列表中添加此密钥（私钥）。
+
+       运行在小乌龟安卓目录的bin文件下的 pageant 程序，
+
+       ![image-20231116095739987](http://biji.51automate.cn/blogs/img/image-20231116095739987.png)
+
+       找到右边下角图标
+
+       ![image-20230925093919909](http://biji.51automate.cn/blogs/imgimage-20230925093919909.png)
+
+       ![image-20230925094046551](http://biji.51automate.cn/blogs/imgimage-20230925094046551.png)
+
+       
+
+   - 将新密钥（公钥）复制到 GitHub或码云中
+
+     **提醒：私钥需要妥善保存。如果没有私钥，上传至 GitHub 的公钥等于作废。**
+
+     ![image-20231222134909101](http://biji.51automate.cn/blogs/img/202312221349464.png)
+
+
+
+## 小乌龟日常版本管理常用操作演示
 
 展示基本的 新建切换合并分支，日志信息和版本分支图使用、删除分支、解决简单冲突等。
 
@@ -152,8 +231,6 @@ D:\Program Files\Git
 
   
 
-
-
 #### 小知识 
 
 1. Git中，origin / master与origin master之间有什么区别？
@@ -183,8 +260,6 @@ D:\Program Files\Git
 ### 版本回退（回滚）
 
 待补充
-
-
 
 
 
@@ -222,7 +297,7 @@ D:\Program Files\Git
 
 
 
-## github
+## Github
 
 ### 搜索技巧
 
@@ -248,8 +323,6 @@ D:\Program Files\Git
 
 ![100000002](http://biji.51automate.cn/blogs/img100000002.gif)
 
-
-
 ### 阅读代码技巧
 
 很多时候都是下载到本地，其实可以在线阅读。
@@ -265,81 +338,4 @@ D:\Program Files\Git
 https://github.com/liyupi/sql-mother 》》 https://gitpod.io/#/github.com/liyupi/sql-mother
 
 https://github.com/youhuangla/Note/blob/main/web/img/image-20220504231259146.png)
-
-## 版本管理遇到的问题及解决方案
-
-#### 使用小乌龟clone的项目没有显示绿勾
-
-解决方案：https://blog.csdn.net/XIA_1997/article/details/82801741
-
-
-
-
-
-今天使用小乌龟 将本 Git 项目推送到 GitHub 时，GitHub 却一直报如下错误：
-
-`You‘re using an RSA key with SHA-1, which is no longer allowed. Please use a newer client`
-
-原来是 GitHub 在 2022 年 3 月 15 日之后将不再支持 `RSA` 算法生成的密钥，原因是 `RSA` 不够安全，而笔者之前一直是使用如下命令生成密钥对的：
-
-`ssh-keygen -t rsa -C "邮箱"`
-
-现在只要更改[加密算法](https://so.csdn.net/so/search?q=加密算法&spm=1001.2101.3001.7020)即可，可以选择 `ed25519`
-
-### 解决方案
-
-1. 使用git生成密钥对
-
-   `ssh-keygen -t 加密算法 -C "邮箱"`
-
-   
-
-   ```
-   ssh-keygen -t ed25519 -C "邮箱"
-   ssh-keygen -t ed25519 -C "120158568@qq.com"
-   
-   # 注意 引号不能省略；加密算法使用 `ed25519`
-   ```
-
-   
-
-   执行命令后，会在`C:\Users\Windows 用户名\.ssh`文件夹下面生成两个文件，![image-20230925092831418](http://biji.51automate.cn/blogs/imgimage-20230925092831418.png)
-
-   其中第一个是私钥，第二个是公钥，公钥需要提供给github或者码云
-
-2. 使用小乌龟生成密钥对
-
-   - 运行小乌龟安卓目录的bin文件下的 PuTTYgen程序
-
-     ![image-20230925093303755](http://biji.51automate.cn/blogs/imgimage-20230925093303755.png)
-
-   - 选择加密算法，并生成密钥对
-
-     ![image-20230925093632549](http://biji.51automate.cn/blogs/imgimage-20230925093632549.png)
-
-   - 需要不断在 PuTTY 软件界面内晃动鼠标，因为生成密钥时需要鼠标移动来生成随机数。
-
-     ![image-20230925093741319](http://biji.51automate.cn/blogs/imgimage-20230925093741319.png)
-
-   - 生成成功之后，显示出来的就是公钥了。与前面在 Git 中一样，需要全文复制这个公钥，以及保存自己的私钥。
-
-     ![image-20230925093839240](http://biji.51automate.cn/blogs/imgimage-20230925093839240.png)
-
-   - 在密钥列表中添加此密钥（私钥）。
-
-     运行在小乌龟安卓目录的bin文件下的 pageant 程序，
-
-     ![image-20231116095739987](http://biji.51automate.cn/blogs/img/image-20231116095739987.png)
-     
-     找到右边下角图标
-     
-     ![image-20230925093919909](http://biji.51automate.cn/blogs/imgimage-20230925093919909.png)
-     
-     ![image-20230925094046551](http://biji.51automate.cn/blogs/imgimage-20230925094046551.png)
-
-3. 将新密钥（公钥）复制到 GitHub或码云中
-
-   **提醒：私钥需要妥善保存。如果没有私钥，上传至 GitHub 的公钥等于作废。**
-
-
 

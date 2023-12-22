@@ -1,4 +1,12 @@
-# 安装 升级 卸载
+# node环境及使用nvm进行node版本管理
+
+## 卸载
+
+如果电脑已经下载了node需要先卸载node，再安装nvm，以避免冲突。
+
+参考：https://blog.csdn.net/dgfdhgghd/article/details/123356831
+
+关键点：卸载主程序、删除环境变量、**重启电脑**
 
 ## 安装 node.js
 
@@ -170,4 +178,8 @@ git config --global url."https://".insteadOf git://
 
 ![image-20231127204443723](http://biji.51automate.cn/blogs/img/202311272047201.png)
 
-再次npm 安装就ok 了
+再次npm 安装就ok 了。
+
+
+
+另外提醒一下：本地的git环境 最好设置好了用户名和邮箱，以及配置了公钥在github或者gitee，以免出现不必要的麻烦。

@@ -17,6 +17,7 @@ xuefeng365测开笔记
    03主流测试框架/index
    04接口测试工具/index
    05接口测试平台/index
+   05移动端测试/index
    06流量回放/index
    07性能测试/index
    08中间件/index

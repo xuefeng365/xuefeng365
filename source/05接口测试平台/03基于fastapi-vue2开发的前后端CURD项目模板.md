@@ -1,37 +1,21 @@
-# fastapi-Vue前后端项目开发
+# 基于fastapi-vue2开发的前后端CURD项目模板
 
-## 项目结构
+### 项目结构
 
 ![image-20231127221727991](http://biji.51automate.cn/blogs/img/202311272315461.png)
 
-主要真的 很喜欢  go  rust  之类的能交叉编译的 语言。 我运维知识不是很好 这种部署起来超方便
-
- 嗯，编译成二进制直接放上去运行
-
-python+go+js，日常基本都你解决了
-
-py第一语言，go补py的性能问题
-
-go做接口 然后用go-celery 做异步队列给 python异步执行他擅长的数据处理 。 这样效率非常高
+### 项目地址
 
 
 
-aps封装好挺香，后台管理动态增删改任务
+## 启动项目
 
-celery要另起进程，玩不转
-
-阅读和理解项目流程
-
-
-
-## 启动
-
-### 配置
+### 配置相关
 
 #### 配置文件位置
 
-后端在 configs/ .env
-前端在 .env.development /  .env.production / 
+后端在 `configs/ .env`
+前端在 `.env.development /  .env.production / `
 
 #### 后端
 
@@ -56,8 +40,6 @@ python -m virtualenv venv     # 创建虚拟环境
 pip install -r requirements.txt --target=./venv/Lib/site-packages  -i  https://pypi.doubanio.com/simple
 ```
 
-
-
 ##### 启动后端
 
 ```
@@ -74,8 +56,6 @@ http://localhost:8888/docs
 # redoc
 http://localhost:8888/redoc
 ```
-
-
 
 
 
@@ -100,8 +80,6 @@ cd .\frontend\dashborad\
 npm i  # 安装包
 ```
 
-
-
 ##### 启动前端
 
 ```
@@ -109,15 +87,13 @@ cd .\frontend\dashborad\
 npm run dev
 ```
 
-### 账号:
+#### 账号:
 
 | 角色     | 用户名 | 密码     |
 | -------- | ------ | -------- |
 | 管理员   | admin  | admin123 |
 | 运维员   | opt    | opt123   |
 | 普通用户 | user   | 123456   |
-
-
 
 
 
@@ -512,7 +488,7 @@ pip
 
 
 
-#### 菜单功能 快速新增和删除
+#### 菜单功能 快速新增和删除（待更新）
 
 
 
@@ -591,8 +567,6 @@ fastapi中的依赖注入[Depends](https://blog.csdn.net/NeverLate_gogogo/articl
 生成token以及token的结构
 
 ![image-20231122192741264](http://biji.51automate.cn/blogs/img/image-20231122192741264.png)
-
-
 
  orm进行增删改查
 
@@ -854,11 +828,9 @@ end_time_timestamp = end_time.timestamp()
 
 
 
-
-
 现在控制输出模型并没有生效，后面要解决一下 。
 
-# Post请求的3种编码格式：application/x-www-form-urlencoded和multipart/form-data和application/json
+### Post请求的3种编码格式：application/x-www-form-urlencoded和multipart/form-data和application/json
 
 
 
@@ -1438,7 +1410,7 @@ async def my_async_function():
 克隆项目主分支
 
 ```shell
-git clone -b main https://github.com/JohnDoe1996/fastAPI-vue.git
+
 ```
 
 数据库中创建DB

@@ -76,7 +76,7 @@ which <关键词>  which python3.7
 
 $PATH 环境变量： Linux 系统比较常用的变量之一。格式：多个路径组成，由英文冒号(:)进行分割
 
-![image-20230221161320756](http://biji.51automate.cn/blogs/img/image-20230221161320756.png)
+![image-20230221161320756](http://biji.51automate.cn/blogs/img/202312221330062.png)
 
 假设将用户家目录下的 tools 添加 $PATH环境变量，怎么操作？
 
@@ -149,7 +149,7 @@ sync&&echo 3 > /proc/sys/vm/drop_caches
 
 ```
 
-![image-20230214180755293](http://biji.51automate.cn/blogs/img/image-20230214180755293.png)
+![image-20230214180755293](http://biji.51automate.cn/blogs/img/202312221331791.png)
 
 > total: 内存总数
 >
@@ -348,9 +348,9 @@ cd进入查看比较大的文件
 
 ```
 
-![image-20231009193923458](http://biji.51automate.cn/blogs/imgimage-20231009193923458.png)
+![image-20231009193923458](http://biji.51automate.cn/blogs/img/202312221331043.png)
 
-![image-20231009194634435](http://biji.51automate.cn/blogs/imgimage-20231009194634435.png)
+![image-20231009194634435](http://biji.51automate.cn/blogs/img/202312221331972.png)
 
 
 
@@ -371,15 +371,15 @@ https://blog.51cto.com/u_16213367/7649711#:~:text=%E6%B8%85%E7%90%86Overlay2%20%
 df -h
 ```
 
-![image-20231010095707757](http://biji.51automate.cn/blogs/imgimage-20231010095707757.png)
+![image-20231010095707757](http://biji.51automate.cn/blogs/img/202312221331079.png)
 
 再次查看占用空间，释放了很多。
 
-![image-20231010095959882](http://biji.51automate.cn/blogs/imgimage-20231010095959882.png)
+![image-20231010095959882](http://biji.51automate.cn/blogs/img/202312221331690.png)
 
 前面发现还有一个文件`overlay2` 占用空间也很多,我们也清理一下
 
-![image-20231010100350060](http://biji.51automate.cn/blogs/imgimage-20231010100350060.png)
+![image-20231010100350060](http://biji.51automate.cn/blogs/img/202312221331260.png)
 
 同样的方法，一步步找出 大文件，删除即可，不再记录
 
