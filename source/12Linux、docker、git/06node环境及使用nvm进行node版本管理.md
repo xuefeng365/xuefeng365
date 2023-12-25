@@ -14,13 +14,13 @@
 
 https://nodejs.org/en/about/previous-releases
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/25763438/1666701660625-14c6ccf0-f3dc-415c-a600-33bc39c13df7.png)
+![img](http://biji.51automate.cn/blogs/img/202312221616082.png)
 
 ### 淘宝镜像（选择V12以上的长期维护版）
 
 https://registry.npmmirror.com/binary.html?path=node/
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/25763438/1666702601931-74c6c3b1-e3df-4fdf-a97f-00e1143b847c.png)
+![img](http://biji.51automate.cn/blogs/img/202312221616608.png)
 
 
 

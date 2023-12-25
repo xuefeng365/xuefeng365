@@ -358,10 +358,6 @@ cd进入查看比较大的文件
 
 https://blog.csdn.net/Small_StarOne/article/details/123655176
 
-
-
-https://blog.51cto.com/u_16213367/7649711#:~:text=%E6%B8%85%E7%90%86Overlay2%20%E6%AD%A5%E9%AA%A41%3A%20%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E9%95%9C%E5%83%8F%E5%92%8C%E5%AE%B9%E5%99%A8%20%E6%AD%A5%E9%AA%A42%3A%20%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E5%81%9C%E6%AD%A2%E7%9A%84%E5%AE%B9%E5%99%A8,%E6%AD%A5%E9%AA%A43%3A%20%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E6%9C%AA%E8%A2%AB%E4%BD%BF%E7%94%A8%E7%9A%84%E9%95%9C%E5%83%8F%20%E6%AD%A5%E9%AA%A44%3A%20%E6%B8%85%E7%90%86Overlay2%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%20%E6%AD%A5%E9%AA%A45%3A%20%E6%A3%80%E6%9F%A5%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4
-
 有一天使用，突然发现我的 linux服务器 空间占用太高，没空间了。
 
 因为有使用 docker ，猜想长时间运行日志文件肯定很多。下面验证一下 ，发现`-json.log`文件果然很大，删除时即可

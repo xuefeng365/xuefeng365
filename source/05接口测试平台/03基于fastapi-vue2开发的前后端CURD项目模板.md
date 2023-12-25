@@ -214,280 +214,6 @@ WHERE
 
 
 
-控制面板
-
-- 升级数据库  
-
-  > v-hasRole="['admin','opts']"
-
-- 上传定时脚本 
-
-  > v-hasPermi="['monitor:job:post']"
-
-开发者
-
-- 新增
-
-  > v-has-permi="['hiker:developer:post']"
-
-- 修改
-
-  > v-has-permi="['hiker:developer:put']"
-
-- 删除
-
-  > v-hasRole="['admin','opts']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个修改
-
-  > v-has-permi="['hiker:developer:put']"
-
-- 操作-单个删除
-
-  > v-hasRole="['admin','opts']"
-
-规则
-
-- 新增
-
-  > v-has-permi="['hiker:rule:post']"
-
-- 修改
-
-  > v-has-permi="['hiker:rule:put']"
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个修改
-
-  > v-has-permi="['hiker:rule:put']"
-
-- 操作-单个删除
-
-  > v-hasRole="['admin','opts']"
-
-规则类型
-
-- 新增
-
-  > v-has-permi="['hiker:rule_type:post']"
-
-- 修改
-
-  > v-has-permi="['hiker:rule_type:put']"
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个修改
-
-  >  v-has-permi="['hiker:rule_type:put']"
-
-- 操作-单个删除
-
-  > v-hasRole="['admin','opts']"
-
-定时器
-
-- 新增
-
-  > v-hasPermi="['monitor:job:post']"
-
-- 修改
-
-  > v-hasPermi="['monitor:job:put']"
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个修改
-
-  >  v-hasPermi="['monitor:job:put']"
-
-- 操作-单个删除
-
-  > v-hasRole="['admin','opts']"
-
-- 操作执行一次
-
-  > <el-dropdown-item command="handleRun" icon="el-icon-caret-right" v-hasRole="['admin','opts']">执行一次</el-dropdown-item>
-
-
-
-登录日志
-
-- 清空
-
-  > v-hasRole="['admin','opts']"
-
-- 删除
-
-  > v-hasRole="['admin','opts']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个删除
-
-  > v-hasRole="['admin','opts']"
-
-- 操作执行一次
-
-  > <el-dropdown-item command="handleRun" icon="el-icon-caret-right" v-hasRole="['admin','opts']">执行一次</el-dropdown-item>
-
-pip
-
-- 新增
-
-  >  v-hasPermi="['monitor:pip:post']"
-
-- 修改
-
-  > v-hasPermi="['monitor:pip:put']"
-
-- 卸载
-
-  >  v-hasRole="['admin','opts']"
-
-- 操作-单个修改
-
-  >  v-hasPermi="['monitor:pip:put']"
-
-- 操作-单个卸载
-
-  > v-hasRole="['admin','opts']"
-
-
-
-用户
-
-- 新增
-
-  > ```
-  > v-hasPermi="['perm:user:post']"
-  > ```
-
-- 修改
-
-  > ```
-  > v-hasPermi="['perm:user:put']"
-  > ```
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 导入
-
-  > v-hasPermi="['perm:user:post']"
-
-- 导出
-
-  > v-has-permi="['report:excel_generate:export']"
-
-- 操作-单个修改
-
-  >  v-hasPermi="['perm:user:put']"
-
-- 操作-删除/重置
-
-  > v-hasRole="['admin','opts']"
-
-字典详情
-
-- 新增
-
-  > ```
-  > v-hasPermi="['system:dict:detail:post']"
-  > ```
-
-- 修改
-
-  > ```
-  > v-hasPermi="['system:dict:detail:put']"
-  > ```
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 操作-单个修改
-
-  >  v-hasPermi="['system:dict:detail:put']"
-
-- 操作-删除
-
-  > v-hasRole="['admin','opts']"
-
-字典
-
-- 新增
-
-  > ```
-  > v-hasPermi="['system:dict:post']"
-  > ```
-
-- 修改
-
-  > v-hasPermi="['system:dict:put']"
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 操作-单个修改
-
-  >   v-hasPermi="['system:dict:put']"
-
-- 操作-删除
-
-  > v-hasRole="['admin','opts']"
-
-参数管理
-
-- 新增
-
-  > v-hasPermi="['system:config-setting:post']"
-
-- 修改
-
-  > v-hasPermi="['system:config-setting:put']"
-
-- 删除
-
-  >  v-hasRole="['admin','opts']"
-
-- 操作-单个修改
-
-  >   v-hasPermi="['system:config-setting:put']"
-
-- 操作-删除
-
-  > v-hasRole="['admin','opts']"
-
-
-
 #### 菜单功能 快速新增和删除（待更新）
 
 
@@ -1575,6 +1301,17 @@ passwd
 # 然后输入两次密码
 ```
 
+#### 卸载nginx
+
+参考：https://www.python100.com/html/0S5UG8L956FT.html
+
+```
+查看版本
+nginx -v
+```
+
+
+
 #### 安装nginx
 
 因为我们用nginx作Web服务器，所以我们需要先安装nginx服务。具体步骤如下：
@@ -1617,7 +1354,7 @@ cd /usr/local/nginx
 ls
 
 # 由于nginx默认通过80端口访问，而Linux默认情况下不会开发该端口号，因此需要开放linux的80端口供外部访问
-/sbin/iptables -I INPUT -p tcp –-dport 80 -j ACCEPT
+/sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 
 # 进入安装目录（usr/local/nginx）的sbin 目录下，启动nginx。
 cd sbin
@@ -1648,6 +1385,7 @@ mkdir -p /home/www/fastapivue2
 配置文件 `nginx.conf`, 配置文件内容如下：直接复制即可
 
 ```
+
 #user  nobody;
 worker_processes  1;
 
@@ -1683,6 +1421,7 @@ http {
         location / {
             root    /home/www/myFavorite;
             index  index.html index.htm;
+            try_files $uri $uri/ /index.html;
         }
         
         # 访问链接中出现 /api/ 就转发到本地的9090端口（该端口是 后端服务端口）
@@ -1695,26 +1434,22 @@ http {
             root   html;
         }
     }
-    
-    server {
+        server {
         listen       80;
         server_name  fv2.51automate.cn;
 
         location / {
             root    /home/www/fastapivue2;
             index  index.html index.htm;
+            try_files $uri $uri/ /index.html;
         }
         
-        # 访问链接中出现 /fv2/ 就转发到本地的8888端口（该端口是 后端服务端口）
-        location /fv2/ {
+        # 访问链接中出现 /api/ 就转发到本地的8888端口（该端口是 后端服务端口）
+        location /api/ {
             proxy_pass   http://127.0.0.1:8888/api/;
         }
-
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   html;
-        }
     }
+    
 }
 
 ```
@@ -1740,6 +1475,10 @@ location /api/ {
 /usr/local/nginx/sbin/nginx -s reopen
 停止服务
 /usr/local/nginx/sbin/nginx -s stop
+
+手动启动nginx服务
+cd /usr/local/nginx       进入nginx安装目录
+sudo /usr/local/nginx/sbin/nginx  管理员权限【启动nginx】
 ```
 
 
@@ -1819,10 +1558,57 @@ http://fv2.51automate.cn/
 ```
 lsof -i:8888  或者 netstat -ap|grep 8888
 
+kill -9  进程号(pid)
+或者
 kill -s  进程号(pid)
 ```
 
 
 
+ 遇到的问题：
+
+##### nginx部署vue项目(除首页外全404)
+
+history模式，要设置 不管访问哪个目录路径，都会访问根目录的index.html文件
+
+```
+location / {
+            root   /home/ruoyi/projects/ruoyi-ui;
+            try_files $uri $uri/ /index.html;
+            index  index.html index.htm;
+        }
+```
 
 
+
+https://blog.csdn.net/HD243608836/article/details/133706915
+
+https://blog.csdn.net/sluck_0430/article/details/123659161
+
+
+
+
+
+```
+# 把先前的nginx容器删除
+docker stop nginx
+docker rm nginx
+
+docker run -p 80:80 --name nginx \
+    -v /data/docker/nginx/www:/usr/share/nginx/html \
+    -v /data/docker/nginx/log:/var/log/nginx \
+    -v /data/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
+    -v /data/docker/nginx/conf/conf.d/:/etc/nginx/conf.d/ \
+    -d nginx
+    
+    
+# 重新加载 Nginx 的配置文件
+docker exec -it nginx nginx -s reload
+docker kill -s HUP nginx
+```
+
+
+
+#### Docker之nginx镜像
+
+https://juejin.cn/post/6844904128150241287
