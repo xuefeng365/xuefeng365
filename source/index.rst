@@ -24,7 +24,7 @@ xuefeng365测开笔记
    09通用技术/index
    10爬虫技术/index
    11网站推荐/index
-   1212Linux、docker、git、nginx/index
+   12Linux、docker、git、nginx/index
    18读书笔记/index
    30自我介绍/index
 

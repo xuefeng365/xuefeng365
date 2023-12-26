@@ -62,6 +62,8 @@ files = supervisord.d/conf/*.conf
 
 > 守护进程： 在我们生产环境的时候，有些任务是不能停止的，否则业务就会受到影响，那么如何保证这些任务的高可用呢？那就需要用到我们的守护进程了，比方说我们的进程运行挂掉之后自动恢复等等
 
+配置文件说明
+
 ```
 [program:nginx] #  设置进程的名称，使用 supervisorctl 来管理进程时需要使用该进程名 我这里就叫做nginx了!
 command=/usr/sbin/nginx -g 'daemon off;' # 需要执行的命令
@@ -75,12 +77,27 @@ priority=10 # 启动优先级
 stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB
 stdout_logfile_backups = 20     ; stdout 日志文件备份数
 ; stdout 日志文件，需要注意当指定目录不存在时无法正常启动，所以需要手动创建目录（supervisord 会自动创建日志文件）
-stdout_logfile=/data/logs/supervisord/nginx.log # 子进程的stdout的日志路径 输出日志文件
+stdout_logfile=/etc/supervisord.d/log/nginx.log # 子进程的stdout的日志路径 输出日志文件
 
-stderr_logfile=/data/logs/supervisord/nginx.err.log # 错误日志文件 当redirect_stderr=true。这个就不用
+stderr_logfile=/etc/supervisord.d/log/nginx.err.log # 错误日志文件 当redirect_stderr=true。这个就不用
 
 ; 可以通过 environment 来添加需要的环境变量，一种常见的用法是修改 PYTHONPATH
 ; environment=PYTHONPATH=$PYTHONPATH:/path/to/somewhere
+```
+
+实际内容
+
+```
+[program:nginx] 
+command=/usr/sbin/nginx -g 'daemon off;'
+directory=/etc/nginx
+autostart=true
+autorestart=true 
+redirect_stderr=true 
+priority=10
+stdout_logfile_maxbytes = 20MB
+stdout_logfile_backups = 20
+stdout_logfile=/etc/supervisord.d/log/nginx.log
 ```
 
 #### 修改后更新 `Supervisor`
