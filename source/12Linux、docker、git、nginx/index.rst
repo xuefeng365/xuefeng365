@@ -3,16 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Linux、docker、git
+Linux、docker、git、nginx
 =================================
  
 .. toctree::
    :maxdepth: 1
-   :caption: Contents
+   :caption: https://www.bookstack.cn/read/huweihuang-linux-notes/README.md
    
    01Linux及docker常用命令
    02Linux克隆爬虫仓库时，权限被拒绝
    03Git配置、小乌龟版本管理演示、Github高级用法
    05mysql
    06node环境及使用nvm进行node版本管理
+   进程管理工具supervisor守护nginx或项目进程
+   Nginx容器配置宿主机和容器的工作目录挂载和多个端口监听等
    

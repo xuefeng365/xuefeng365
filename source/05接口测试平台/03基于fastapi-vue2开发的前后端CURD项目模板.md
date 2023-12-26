@@ -1312,7 +1312,7 @@ nginx -v
 
 
 
-#### 安装nginx
+#### 安装nginx（非docker）
 
 因为我们用nginx作Web服务器，所以我们需要先安装nginx服务。具体步骤如下：
 
@@ -1434,7 +1434,7 @@ http {
             root   html;
         }
     }
-        server {
+    server {
         listen       80;
         server_name  fv2.51automate.cn;
 
@@ -1495,9 +1495,25 @@ sudo /usr/local/nginx/sbin/nginx  管理员权限【启动nginx】
 
 #### 打包遇到的问题：
 
-npm run build 之后生成的index.html页面打开为空白
+1. npm run build 之后生成的index.html页面打开为空白
 
-https://blog.csdn.net/qq_44785351/article/details/129320814
+   https://blog.csdn.net/qq_44785351/article/details/129320814
+
+2. nginx部署，可以访问首页index，直接访问其他项目路径 全部404
+
+   https://blog.csdn.net/HD243608836/article/details/133706915
+
+   vue的history模式，要设置 不管访问哪个目录路径，都会访问根目录的index.html文件
+
+   ```
+   location / {
+               root   /home/ruoyi/projects/ruoyi-ui;
+               try_files $uri $uri/ /index.html;
+               index  index.html index.htm;
+           }
+   ```
+
+   
 
 
 
@@ -1547,6 +1563,16 @@ nohup python main.py
 
 # 访问
 http://fv2.51automate.cn/
+
+
+--- 收藏项目  端口9090---------
+cd /root/myFavorite
+
+# 解决Linux关闭终端（关闭SSH等）后运行的程序或者服务自动停止【后台运行程序】
+nohup python3 myFavorite.py
+
+# 访问
+http://myfav.51automate.cn/
 ```
 
 
@@ -1565,50 +1591,5 @@ kill -s  进程号(pid)
 
 
 
- 遇到的问题：
-
-##### nginx部署vue项目(除首页外全404)
-
-history模式，要设置 不管访问哪个目录路径，都会访问根目录的index.html文件
-
-```
-location / {
-            root   /home/ruoyi/projects/ruoyi-ui;
-            try_files $uri $uri/ /index.html;
-            index  index.html index.htm;
-        }
-```
 
 
-
-https://blog.csdn.net/HD243608836/article/details/133706915
-
-https://blog.csdn.net/sluck_0430/article/details/123659161
-
-
-
-
-
-```
-# 把先前的nginx容器删除
-docker stop nginx
-docker rm nginx
-
-docker run -p 80:80 --name nginx \
-    -v /data/docker/nginx/www:/usr/share/nginx/html \
-    -v /data/docker/nginx/log:/var/log/nginx \
-    -v /data/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
-    -v /data/docker/nginx/conf/conf.d/:/etc/nginx/conf.d/ \
-    -d nginx
-    
-    
-# 重新加载 Nginx 的配置文件
-docker exec -it nginx nginx -s reload
-docker kill -s HUP nginx
-```
-
-
-
-#### Docker之nginx镜像
-
-https://juejin.cn/post/6844904128150241287
