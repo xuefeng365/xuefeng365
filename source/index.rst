@@ -20,11 +20,12 @@ xuefeng365测开笔记
    05移动端测试/index
    06流量回放/index
    07性能测试/index
+   08数据库/index
    08中间件/index
    09通用技术/index
    10爬虫技术/index
    11网站推荐/index
-   12Linux、docker、git、nginx/index
+   12Linux、docker、git、node/index
    18读书笔记/index
    30自我介绍/index
 
