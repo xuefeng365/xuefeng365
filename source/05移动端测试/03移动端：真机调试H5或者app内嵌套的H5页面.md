@@ -134,12 +134,8 @@
 
 ### 朋友推荐：全平台调试工具 
 
-# Mobile Debug
+#### Mobile Debug
 
 [`Mobile Debug`官网下载地址](https://link.juejin.cn/?target=https%3A%2F%2Fwww.mobiledebug.com%2F)
 
 
-
-怎么判断是否是H5页面？
-
-H5页面白屏可能的原因？
