@@ -21,7 +21,17 @@ D:\Program Files\Git
 ### Git 常用命令
 
 ```
-待补充
+# 教程： https://blog.csdn.net/weixin_45697805/article/details/106197919
+git status  #查看工作区代码相对于暂存区的差别
+git add .    #将当前目录下修改的所有代码从工作区添加到暂存区 . 代表当前目录 add后面一个空格然后输入点
+
+# 将缓存区内容添加到本地仓库。--no-verify：不验证代码格式 ， -a -m 可以将暂存区的所有内容合并提交到本地仓库
+git commit --no-verify -m "20231128备份"
+
+# 拉下git最新代码，必须要执行，不然会覆盖掉别人刚提交过的代码。
+git pull 
+# 推送。  origin #是远程主机，master表示是远程服务器上的master分支，分支名是可以修改成其他分支 的名字的
+git push origin master 
 ```
 
 
