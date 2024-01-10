@@ -1,5 +1,7 @@
 # 基于fastapi-vue2开发的前后端CURD项目模板
 
+
+
 ### 项目结构
 
 ![image-20231127221727991](http://biji.51automate.cn/blogs/img/202311272315461.png)
@@ -114,6 +116,8 @@ npm run dev
 
 
 #### 基于 JWT+OAuth2实现登录功能
+
+**JSON 网络令牌**（JSON Web Tokens）
 
 登录接口将 token 返回了, 同时存了一份在redis  , key以`user_login_token_`开头
 
@@ -1416,4 +1420,23 @@ kill -s  进程号(pid)
 
 
 
+
+---
+
+alembic ` [ə'lembɪk] `数据库结构维护（热更）、APScheduler `[ˈAPʃɛdjuːlər]` (异步任务调度库，可灵活执行各种定时任务，支持CRON表达式) 、使用supervisor管理项目(生产环境)、
+
+celery是基于**进程**来执行。celery是一个**分布式**的任务队列（你定义的任务会被Celery分发到一个任务队列中），每个任务都是在独立进程中执行，用于处理**异步**任务，还支持 任务调度、定时任务（发邮件、数据处理、生成报告）等功能。
+
+```
+git status  #查看工作区代码相对于暂存区的差别
+git add .    #将当前目录下修改的所有代码从工作区添加到暂存区 . 代表当前目录 add后面一个空格然后输入点
+
+# 将缓存区内容添加到本地仓库。--no-verify：不验证代码格式 ， -a -m 可以将暂存区的所有内容合并提交到本地仓库
+git commit --no-verify -m "20231128备份"
+
+# 拉下git最新代码，必须要执行，不然会覆盖掉别人刚提交过的代码。
+git pull 
+# 推送。  origin #是远程主机，master表示是远程服务器上的master分支，分支名是可以修改成其他分支 的名字的
+git push origin master 
+```
 
