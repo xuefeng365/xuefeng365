@@ -1,33 +1,19 @@
-.. demo1 documentation master file, created by
-   sphinx-quickstart on Tue Aug 15 14:41:19 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-xuefeng365测开笔记
-=================================
+主目录
+======
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
-   :caption: Contents
-   
-   
-   01测试体系/index
-   02编程语言和编译工具/index
-   03主流测试框架/index
-   04接口测试工具/index
-   05接口测试平台/index
-   05移动端测试/index
-   06流量回放/index
-   07性能测试/index
-   08数据库/index
-   08中间件/index
-   09通用技术/index
-   10爬虫技术/index
-   11网站推荐/index
-   12Linux、docker、git、node/index
-   18读书笔记/index
-   30自我介绍/index
 
-
-   
+   测试体系/index
+   编程语言和编译工具/index
+   接口测试工具/index
+   接口测试平台/index
+   移动端测试/index
+   性能测试/index
+   数据库/index
+   中间件/index
+   通用技术/index
+   爬虫技术/index
+   Linux、docker、git、node/index
+   自我介绍/index
+   misc/index
